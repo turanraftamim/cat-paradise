@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🐾 A Wholesome Cat World 🐾</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #fffafc, #e0f7fa);
+      color: #4e4e4e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: #ff8fab;
+      margin-top: 30px;
+      font-size: 2.5em;
+    }
+
+    .intro {
+      font-size: 18px;
+      text-align: center;
+      margin: 20px;
+      max-width: 700px;
+    }
+
+    .cat-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .cat-card {
+      background: #fff0f5;
+      border: 2px solid #ffc0cb;
+      border-radius: 20px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .cat-card:hover {
+      transform: scale(1.05);
+    }
+
+    .cat-card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ff69b4;
+    }
+
+    .footer {
+      margin: 40px 20px;
+      font-style: italic;
+      color: #a78bfa;
+      text-align: center;
+    }
+
+    .heart {
+      animation: pulse 1.2s infinite ease-in-out;
+      display: inline-block;
+      color: #ff6f91;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .purr-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #ffd1dc;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .purr-button:hover {
+      background-color: #ffc0cb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐾 Welcome to Cat Paradise 🐾</h1>
+
+  <div class="intro">
+    <p>Dear Guardian angel of Princess Shiro & Pippo-Star,<br>
+    This cozy corner of the internet is just for you — because you're as sweet, soft, and lovable as every kitten in the world. 💖<br>
+    Your love for cats is *pawsitively* the cutest thing ever, and this page is a little hug from every whisker, paw, and purr out there.</p>
+  </div>
+
+  <div class="cat-gallery">
+
+    <!-- Cat Cards -->
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Happy Cat">
+      <div class="caption">Happy to see you! 😺</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Snuggling Cat">
+      <div class="caption">Sending virtual snuggles 🐾</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif" alt="Peekaboo Cat">
+      <div class="caption">Peek-a-boo! I'm cute 😽</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Jumping Cat">
+      <div class="caption">Jumping with joy! 🐱‍🏍</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif" alt="Rolling Cat">
+      <div class="caption">Rollin’ in love & fluff 💕</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/WXB88TeARFVvi/giphy.gif" alt="Box Cat">
+      <div class="caption">Boxes are life 📦🐈</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/OmK8lulOMQ9XO/giphy.gif" alt="Playful Cat">
+      <div class="caption">Wanna play with me? 🎾</div>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://media.giphy.com/media/12HZukMBlutpoQ/giphy.gif" alt="Sleepy Cat">
+      <div class="caption">Nap Queen/King 😴</div>
+    </div>
+
+  </div>
+
+  <!-- Purr Button -->
+  <button class="purr-button" onclick="document.getElementById('purrSound').play()">🐱 Purr for me!</button>
+  <audio id="purrSound">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_17a1c18530.mp3?filename=cat-purring-6024.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="heart">💗 You are the cat’s meow. Thank you for being your adorable self. 💗</p>
+    <p>Made with purrs, paws, and pastel dreams 🐾</p>
+  </div>
+
+</body>
+</html>
